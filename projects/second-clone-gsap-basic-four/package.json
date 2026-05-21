@@ -1,0 +1,26 @@
+{
+	"name": "@lab/second-clone-gsap-basic-four",
+	"private": true,
+	"type": "module",
+	"dependencies": {
+		"@heroicons/react": "^2.2.0",
+		"@tanstack/react-router": "^1.158.0",
+		"framer-motion": "^12.31.0",
+		"lucide": "^0.577.0",
+		"react": "^19.2.4",
+		"react-dom": "^19.2.4"
+	},
+	"scripts": {
+		"dev": "vite",
+		"build": "tsc && vite build",
+		"lint": "eslint \"src/**/*.{js,jsx,ts,tsx}\"",
+		"format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,html,json,md}\""
+	},
+	"devDependencies": {
+		"add": "^2.0.6",
+		"dlx": "^0.2.1",
+		"lucide-solid": "^0.577.0",
+		"popover": "^2.4.1",
+		"shadcn": "^3.8.5"
+	}
+}
