@@ -1,0 +1,63 @@
+@layer components {
+	.magnet-wrap {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		flex: 0 0 auto;
+		position: relative;
+		padding: 15px;
+		height: 85px;
+		border-radius: 999px;
+		overflow: hidden;
+		isolation: isolate;
+	}
+
+	.magnet-link {
+		position: relative;
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		height: 53px;
+		padding: 12px 35px;
+		font-size: 14px;
+		font-weight: 500;
+		color: var(--magnet-text, #1f2428);
+		text-decoration: none;
+	}
+
+	.magnet-bg {
+		position: absolute;
+		inset: 0;
+		border-radius: 999px;
+		background: var(--magnet-bg, #1f2428);
+		border: 1px var(--magnet-border-style, solid) var(--magnet-border, transparent);
+		pointer-events: none;
+		transition:
+			transform 400ms ease,
+			scale 400ms ease;
+		will-change: transform;
+	}
+
+	.magnet-text {
+		position: relative;
+		z-index: 1;
+	}
+
+	.magnet-wrap:hover:not(:has(button:disabled)) .magnet-bg {
+		scale: 1.05;
+	}
+
+	.magnet-wrap:hover .btn-secondary .magnet-bg {
+		border-color: #bfbfbf;
+	}
+
+	@media (min-width: 640px) {
+		.magnet-wrap {
+			height: 88px;
+		}
+
+		.magnet-link {
+			height: 56px;
+		}
+	}
+}

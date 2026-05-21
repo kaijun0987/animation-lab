@@ -1,0 +1,16 @@
+@layer utilities {
+	@keyframes loop-scroll {
+		from {
+			transform: translateY(0);
+		}
+		to {
+			transform: translateY(-50%);
+		}
+	}
+
+	.loop-scroll {
+		display: flex;
+		flex-direction: column;
+		animation: loop-scroll 24s linear infinite;
+	}
+}
