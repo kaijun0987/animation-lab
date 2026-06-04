@@ -1,3 +1,6 @@
 node_modules
 dist
 .DS_Store
+.playwright-cli/
+projects/.playwright-mcp/
+projects/target-mobile*.png
