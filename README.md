@@ -12,6 +12,30 @@ How to start template project
 
 1. pnpm template
 
+How to run clone sub projects
+
+这个 repo 目前有 3 个 clone sub project：
+
+1. first-clone-bruja
+   - status: abandoned
+   - folder: projects/first-clone-bruja
+   - run: pnpm 1clone
+   - build: pnpm --filter @lab/first-clone-bruja build
+
+2. second-clone-gsap-basic-four
+   - folder: projects/second-clone-gsap-basic-four
+   - run: pnpm 2clone
+   - build: pnpm --filter @lab/second-clone-gsap-basic-four build
+
+3. third-clone-tricks-menu-slider
+   - folder: projects/third-clone-tricks-menu-slider
+   - run: pnpm 3clone
+   - build: pnpm --filter @lab/third-clone-tricks-menu-slider build
+
+如果你想一次 build 全部 sub project，可以在 root 跑：
+
+1. pnpm build:all
+
 How to create a new sub project
 
 1. 复制 projects/template 文件夹。
