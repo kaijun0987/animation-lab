@@ -8,6 +8,7 @@
 		"1clone": "pnpm --filter @lab/first-clone-bruja dev",
 		"2clone": "pnpm --filter @lab/second-clone-gsap-basic-four dev",
 		"3clone": "pnpm --filter @lab/third-clone-tricks-menu-slider dev",
+		"4clone": "pnpm --filter @lab/fourth-clone-gsap-scrolltrigger dev",
 		"build:all": "pnpm -r build",
 		"lint": "eslint \"projects/**/src/**/*.{js,jsx,ts,tsx}\"",
 		"format": "prettier --write \"projects/**/*.{js,jsx,ts,tsx,css,html,json,md}\""
