@@ -14,7 +14,7 @@ How to start template project
 
 How to run clone sub projects
 
-这个 repo 目前有 3 个 clone sub project：
+这个 repo 目前有 4 个 clone sub project：
 
 1. first-clone-bruja
    - status: abandoned
@@ -23,14 +23,22 @@ How to run clone sub projects
    - build: pnpm --filter @lab/first-clone-bruja build
 
 2. second-clone-gsap-basic-four
+   - status: completed
    - folder: projects/second-clone-gsap-basic-four
    - run: pnpm 2clone
    - build: pnpm --filter @lab/second-clone-gsap-basic-four build
 
 3. third-clone-tricks-menu-slider
+   - status: completed
    - folder: projects/third-clone-tricks-menu-slider
    - run: pnpm 3clone
    - build: pnpm --filter @lab/third-clone-tricks-menu-slider build
+
+4. fourth-clone-gsap-scrolltrigger
+   - status: completed
+   - folder: projects/fourth-clone-gsap-scrolltrigger
+   - run: pnpm 4clone
+   - build: pnpm --filter @lab/fourth-clone-gsap-scrolltrigger build
 
 如果你想一次 build 全部 sub project，可以在 root 跑：
 
