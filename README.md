@@ -14,7 +14,7 @@ How to start template project
 
 How to run clone sub projects
 
-这个 repo 目前有 5 个 clone sub project：
+这个 repo 目前有 6 个 clone sub project：
 
 1. first-clone-bruja
    - status: abandoned
@@ -45,6 +45,13 @@ How to run clone sub projects
    - folder: projects/fith-clone-pizza-vs-burger
    - run: pnpm 5clone
    - build: pnpm --filter @lab/fith-clone-pizza-vs-burger build
+
+6. six-clone-lithosquare
+   - status: in progress
+   - folder: projects/six-clone-lithosquare
+   - reference: https://lithosquare-preprod.webflow.io/
+   - run: pnpm 6clone
+   - build: pnpm --filter @lab/six-clone-lithosquare build
 
 如果你想一次 build 全部 sub project，可以在 root 跑：
 

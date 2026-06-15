@@ -1,18 +1,15 @@
 import { useEffect, useRef, useState } from 'react';
 
 const assets = {
-	copy:
-		'https://cdn.prod.website-files.com/6061a9478165d56ae4e36fa7/606d71501887ab3f1e2f64ef_copy.svg',
+	copy: 'https://cdn.prod.website-files.com/6061a9478165d56ae4e36fa7/606d71501887ab3f1e2f64ef_copy.svg',
 	copyBlue:
 		'https://cdn.prod.website-files.com/6061a9478165d56ae4e36fa7/606d82f418a40a96ea506d87_copy-blue.svg',
 	heart:
 		'https://cdn.prod.website-files.com/6061a9478165d56ae4e36fa7/606d774e7e2de89d446b7887_heart-pink.svg',
-	star:
-		'https://cdn.prod.website-files.com/6061a9478165d56ae4e36fa7/606cb0d42b7fa227828086b0_rosace-02.svg',
+	star: 'https://cdn.prod.website-files.com/6061a9478165d56ae4e36fa7/606cb0d42b7fa227828086b0_rosace-02.svg',
 	valid:
 		'https://cdn.prod.website-files.com/6061a9478165d56ae4e36fa7/606db1da7622a7fca6c10bff_valid-icon.svg',
-	vote:
-		'https://cdn.prod.website-files.com/6061a9478165d56ae4e36fa7/606a00dc9c3b856303803031_vote.svg',
+	vote: 'https://cdn.prod.website-files.com/6061a9478165d56ae4e36fa7/606a00dc9c3b856303803031_vote.svg',
 };
 
 type ChoiceId = 'pizza' | 'burger';
@@ -108,7 +105,7 @@ function VoteChoice({
 		<div className='collection-item'>
 			<button
 				type='button'
-				className={`vote-toggle${isHovered ? ' is-hovered' : ''}${isSelected ? ' is-selected' : ''}${isSaving ? ' is-saving' : ''}`}
+				className={`vote-toggle${isHovered ? 'is-hovered' : ''}${isSelected ? 'is-selected' : ''}${isSaving ? 'is-saving' : ''}`}
 				aria-label={`Vote for ${choice.id}`}
 				onClick={() => onVote(choice.id)}
 				onPointerEnter={() => onHover(choice.id)}
@@ -267,7 +264,7 @@ export default function App() {
 	return (
 		<main
 			ref={rootRef}
-			className={`pb-site${hoveredChoice ? ' is-choice-hovered' : ''}`}
+			className={`pb-site${hoveredChoice ? 'is-choice-hovered' : ''}`}
 			data-testid='pizza-burger-clone'
 		>
 			<section className='section'>
@@ -292,11 +289,11 @@ export default function App() {
 						))}
 					</div>
 
-					<div className='container face-container'>
+					<div className='face-container container'>
 						<Face />
 					</div>
 
-					<div className='container heading-container' aria-label='pizza VS BURGER'>
+					<div className='heading-container container' aria-label='pizza VS BURGER'>
 						<h1 className='outline-heading'>pizza VS BURGER</h1>
 						<h1 className='outline-heading'>pizza VS BURGER</h1>
 						<h1 className='outline-heading'>pizza VS BURGER</h1>
