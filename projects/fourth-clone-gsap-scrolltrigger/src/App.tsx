@@ -101,7 +101,7 @@ function HeaderIntro() {
 				<div className='header-text'>
 					{lines.map((line, index) => (
 						<div className='header-text-wrap' key={line}>
-							<div className={`header-text-move${index === lines.length - 1 ? 'is-last' : ''}`}>
+							<div className={`header-text-move${index === lines.length - 1 ? ' is-last' : ''}`}>
 								<h1 className={line === 'the best in' ? 'is-alt-text' : undefined}>{line}</h1>
 							</div>
 						</div>
@@ -155,7 +155,7 @@ function ProductGrid() {
 				<div className='grid-text-wrap'>
 					<div className='grid-text-list'>
 						{productGroups.map((group, index) => (
-							<div className={`grid-text-item${index === 0 ? 'is-active' : ''}`} key={group.title}>
+							<div className={`grid-text-item${index === 0 ? ' is-active' : ''}`} key={group.title}>
 								<p className='grid-text-title'>{group.title}</p>
 							</div>
 						))}
@@ -164,7 +164,7 @@ function ProductGrid() {
 				<div className='grid-wrapper-contain'>
 					{productGroups.map((group, groupIndex) => (
 						<div
-							className={`grid-wrapper${groupIndex === productGroups.length - 1 ? 'is-alt' : ''}`}
+							className={`grid-wrapper${groupIndex === productGroups.length - 1 ? ' is-alt' : ''}`}
 							key={group.title}
 							data-grid-title={group.title}
 						>

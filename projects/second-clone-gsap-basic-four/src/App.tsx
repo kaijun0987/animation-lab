@@ -137,7 +137,7 @@ function ThanksLayer({
 	const sources = inverted ? imageSets[1] : imageSets[0];
 
 	return (
-		<div className={`thanks-contain${inverted ? 'is-inverted' : ''}`} style={{ clipPath }}>
+		<div className={`thanks-contain${inverted ? ' is-inverted' : ''}`} style={{ clipPath }}>
 			<p className='thanks-text'>THANKS</p>
 			{sources.map((src, index) => (
 				<div className={`thanks-img is-${index + 1}`} key={src}>
@@ -177,7 +177,7 @@ export default function App() {
 	return (
 		<main id='top' className='site-shell'>
 			<div className='trigger-div' />
-			<nav className={`nav${animation.navTransparent ? 'transparent' : ''}`}>
+			<nav className={`nav${animation.navTransparent ? ' transparent' : ''}`}>
 				<div className='is-nav container'>
 					<Logo />
 					<Hamburger />
@@ -192,7 +192,7 @@ export default function App() {
 				<div className='is-about container'>
 					<div
 						ref={boxTimeline.ref}
-						className={`box${boxTimeline.active ? 'is-active' : ''}`}
+						className={`box${boxTimeline.active ? ' is-active' : ''}`}
 						style={{ '--box-travel': `${animation.boxTravel}px` } as CSSProperties}
 					/>
 				</div>

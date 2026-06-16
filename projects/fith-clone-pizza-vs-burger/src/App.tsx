@@ -105,7 +105,7 @@ function VoteChoice({
 		<div className='collection-item'>
 			<button
 				type='button'
-				className={`vote-toggle${isHovered ? 'is-hovered' : ''}${isSelected ? 'is-selected' : ''}${isSaving ? 'is-saving' : ''}`}
+				className={`vote-toggle${isHovered ? ' is-hovered' : ''}${isSelected ? ' is-selected' : ''}${isSaving ? ' is-saving' : ''}`}
 				aria-label={`Vote for ${choice.id}`}
 				onClick={() => onVote(choice.id)}
 				onPointerEnter={() => onHover(choice.id)}
@@ -264,7 +264,7 @@ export default function App() {
 	return (
 		<main
 			ref={rootRef}
-			className={`pb-site${hoveredChoice ? 'is-choice-hovered' : ''}`}
+			className={`pb-site${hoveredChoice ? ' is-choice-hovered' : ''}`}
 			data-testid='pizza-burger-clone'
 		>
 			<section className='section'>
