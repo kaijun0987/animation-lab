@@ -1,0 +1,18 @@
+@import 'tailwindcss';
+
+@plugin '@tailwindcss/typography';
+
+@import './webflow-timeframe.css';
+
+@theme {
+}
+
+/* Footer text alignment and layout fixes */
+.section.cc-sticky.wide._02 {
+	position: relative !important;
+	height: 100% !important;
+}
+
+._w-label-everyday {
+	padding-bottom: 2vh !important;
+}

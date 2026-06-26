@@ -60,6 +60,13 @@ How to run clone sub projects
    - run: pnpm 7clone
    - build: pnpm --filter @lab/seven-clone-goonies build
 
+8. eight-clone-timeframe
+   - status: completed
+   - folder: projects/eight-clone-timeframe
+   - reference: https://timeframe-app.webflow.io/
+   - run: pnpm 8clone
+   - build: pnpm --filter @lab/eight-clone-timeframe build
+
 如果你想一次 build 全部 sub project，可以在 root 跑：
 
 1. pnpm build:all

@@ -12,6 +12,7 @@
 		"5clone": "pnpm --filter @lab/fith-clone-pizza-vs-burger dev",
 		"6clone": "pnpm --filter @lab/six-clone-lithosquare dev",
 		"7clone": "pnpm --filter @lab/seven-clone-goonies dev",
+		"8clone": "pnpm --filter @lab/eight-clone-timeframe dev",
 		"build:all": "pnpm -r build",
 		"lint": "eslint \"projects/**/src/**/*.{js,jsx,ts,tsx}\"",
 		"format": "prettier --write \"projects/**/*.{js,jsx,ts,tsx,css,html,json,md}\""
